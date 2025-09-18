@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS
     AOS.init({
         disable: 'mobile',
         startEvent: 'DOMContentLoaded',
@@ -17,18 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         anchorPlacement: 'top-bottom',
     });
 
-    new SimpleLightbox('.lightbox-link', {
-        nav: true,
-        captions: true,
-        captionSelector: 'img',
-        captionType: 'attr',
-        captionsData: 'alt',
-        disableScroll: true,
-        closeOnOverlayClick: true,
-        showCounter: true,
-        animationSpeed: 150,
-        fadeSpeed: 250
-    });
+    // SimpleLightbox initialization has been removed
 
     const navToggle = document.querySelector('.nav-toggle');
     const mainNav = document.querySelector('.main-nav');
